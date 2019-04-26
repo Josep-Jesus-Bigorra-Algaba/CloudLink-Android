@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:showIn="navigation_view">
+
+    <group android:id="@+id/firstGroup" android:checkableBehavior="single">
+        <item
+                android:id="@+id/nav_one"
+                android:title="All tickets"/>
+        <item
+                android:id="@+id/nav_two"
+                android:title="All Unresolved Tickets"/>
+        <item
+                android:id="@+id/nav_three"
+                android:title="New &amp; My Open Tickets"/>
+        <item
+                android:id="@+id/nav_four"
+                android:title="Tickets I Requested"/>
+        <item
+                android:id="@+id/nav_five"
+                android:title="Tickets I'm watching"/>
+    </group>
+    <group android:id="@+id/secondGroup" android:checkableBehavior="single">
+        <item
+                android:id="@+id/nav_six"
+                android:title="My Open and Pending Tickets"/>
+        <item
+                android:id="@+id/nav_seven"
+                android:title="My Overdue Tickets"/>
+        <item
+                android:id="@+id/nav_eight"
+                android:title="Open Tickets in My Groups"/>
+        <item
+                android:id="@+id/nav_nine"
+                android:title="Urgent and High Priority Tickets"/>
+
+    </group>
+    <group android:id="@+id/thirdGroup" android:checkableBehavior="single">
+        <item
+                android:id="@+id/nav_eleven"
+                android:title="Spam"/>
+        <item
+                android:id="@+id/nav_twelve"
+                android:title="Trash"/>
+    </group>
+</menu>

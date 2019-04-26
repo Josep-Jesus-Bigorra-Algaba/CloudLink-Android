@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools" android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              app:layout_behavior="@string/hide_bottom_view_on_scroll_behavior">
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="match_parent" app:layout_behavior="@string/hide_bottom_view_on_scroll_behavior"
+                android:layout_marginBottom="50dp">
+        <LinearLayout android:orientation="vertical"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      app:layout_behavior="@string/hide_bottom_view_on_scroll_behavior">
+
+            <TextView
+                    android:text="Create a ticket"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/textView3" android:gravity="center"
+                    android:layout_margin="22dp" android:textStyle="bold" android:textSize="18sp"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/create_ticket_subject" android:layout_margin="16dp" android:hint="Subject"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/create_ticket_attachments" android:hint="Attachments"
+                    android:layout_margin="16dp"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/create_ticket_cc_emails" android:hint="CC Emails" android:layout_margin="16dp"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/create_ticket_company_id" android:hint="Company ID" android:layout_margin="16dp"/>
+            <CheckBox
+                    android:text="Deleted?"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/create_ticket_deleted"
+                    android:layout_margin="16dp"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"
+                    android:ems="10"
+                    android:id="@+id/create_ticket_due_by" android:layout_margin="16dp" android:hint="Due By"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:ems="10"
+                    android:id="@+id/create_ticket_email" android:layout_margin="16dp" android:hint="Email"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/create_ticket_email_config" android:hint="Email Config ID"
+                    android:layout_margin="16dp"
+                    tools:ignore="TextFields"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/create_ticket_facebook_id" android:hint="Facebook ID"
+                    android:layout_margin="16dp"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"
+                    android:ems="10"
+                    android:id="@+id/create_ticket_fr_due_by" android:layout_margin="16dp" android:hint="FR Due By"/>
+            <CheckBox
+                    android:text="Escalated?"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/create_ticket_escalated"
+                    android:layout_margin="16dp"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/create_ticket_name" android:hint="Name" android:layout_margin="16dp"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:ems="10"
+                    android:id="@+id/create_ticket_phone" android:hint="Phone number" android:layout_margin="16dp"/>
+            <TextView
+                    android:text="Priority"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/create_ticket_priority_label"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginStart="16dp" android:layout_marginTop="16dp"/>
+            <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/create_ticket_priority"
+                    android:layout_margin="16dp"
+                    android:entries="@array/priority_decision"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:ems="10"
+                    android:id="@+id/create_ticket_reply_cc" android:layout_margin="16dp"
+                    android:hint="Reply CC Emails"/>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/create_ticket_source" android:hint="Source"
+                    android:layout_margin="16dp"/>
+            <CheckBox
+                    android:text="Spam?"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/create_ticket_spam"
+                    android:layout_margin="16dp"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/create_ticket_status" android:layout_margin="16dp" android:hint="Status"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:ems="10"
+                    android:id="@+id/create_ticket_tags" android:layout_margin="16dp" android:hint="Tags"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:ems="10"
+                    android:id="@+id/create_ticket_to_emails" android:layout_margin="16dp" android:hint="To Emails"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/create_ticket_twitter_id" android:layout_margin="16dp" android:hint="Twitter ID"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/create_ticket_type" android:layout_margin="16dp" android:hint="Type"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/create_ticket_contact_id" android:layout_margin="16dp" android:hint="Contact ID"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/create_ticket_product_id" android:layout_margin="16dp" android:hint="Product ID"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/create_ticket_group_id" android:layout_margin="16dp" android:hint="Group ID"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/create_ticket_agent_id" android:layout_margin="16dp" android:hint="Agent ID"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

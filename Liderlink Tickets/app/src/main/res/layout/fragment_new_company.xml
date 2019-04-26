@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              app:layout_behavior="@string/hide_bottom_view_on_scroll_behavior">
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="match_parent" app:layout_behavior="@string/hide_bottom_view_on_scroll_behavior"
+                android:layout_marginBottom="50dp">
+        <LinearLayout android:orientation="vertical"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      app:layout_behavior="@string/hide_bottom_view_on_scroll_behavior">
+            <TextView
+                    android:text="Create a company"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/textView3" android:gravity="center"
+                    android:layout_margin="22dp" android:textStyle="bold" android:textSize="18sp"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/create_company_name" android:layout_margin="16dp" android:hint="Name"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/create_company_description" android:hint="Description"
+                    android:layout_margin="16dp"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/create_company_domain" android:hint="Domain" android:layout_margin="16dp"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/create_company_id" android:hint="Company ID" android:layout_margin="16dp"/>
+
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"
+                    android:ems="10"
+                    android:id="@+id/create_company_note" android:layout_margin="16dp" android:hint="Note"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:ems="10"
+                    android:id="@+id/create_company_health_score" android:layout_margin="16dp"
+                    android:hint="Health Score"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/create_company_account_tier" android:hint="Account Tier"
+                    android:layout_margin="16dp"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/create_company_renewal_date" android:hint="Renewal Date"
+                    android:layout_margin="16dp"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"
+                    android:ems="10"
+                    android:id="@+id/create_company_industry" android:layout_margin="16dp" android:hint="Industry"/>
+
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/create_company_created_at" android:hint="Created At" android:layout_margin="16dp"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:ems="10"
+                    android:id="@+id/create_company_updated_at" android:hint="Updated At" android:layout_margin="16dp"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

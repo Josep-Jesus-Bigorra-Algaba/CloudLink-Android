@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              app:layout_behavior="@string/hide_bottom_view_on_scroll_behavior">
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="match_parent" app:layout_behavior="@string/hide_bottom_view_on_scroll_behavior"
+                android:layout_marginBottom="50dp">
+        <LinearLayout android:orientation="vertical"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      app:layout_behavior="@string/hide_bottom_view_on_scroll_behavior">
+            <TextView
+                    android:text="Create a contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/textView3" android:gravity="center"
+                    android:layout_margin="22dp" android:textStyle="bold" android:textSize="18sp"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/create_contact_active" android:hint="Active" android:layout_margin="16dp"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/create_contact_address" android:hint="Address" android:layout_margin="16dp"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/create_contact_view_all_tickets" android:hint="View All Tickets"
+                    android:layout_margin="16dp"/>
+            <CheckBox
+                    android:text="Deleted?"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/create_contact_deleted"
+                    android:layout_margin="16dp"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:ems="10"
+                    android:id="@+id/create_contact_description" android:layout_margin="16dp"
+                    android:hint="Description"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:ems="10"
+                    android:id="@+id/create_contact_email" android:layout_margin="16dp" android:hint="Email"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/create_contact_id" android:hint="ID" android:layout_margin="16dp"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/create_contact_job_title" android:hint="Job Title" android:layout_margin="16dp"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"
+                    android:ems="10"
+                    android:id="@+id/create_contact_language" android:layout_margin="16dp" android:hint="Language"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:ems="10"
+                    android:id="@+id/create_contact_mobile" android:hint="Mobile" android:layout_margin="16dp"/>
+
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/create_contact_other_emails" android:hint="Other Emails"
+                    android:layout_margin="16dp"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:ems="10"
+                    android:id="@+id/create_contact_phone" android:hint="Phone" android:layout_margin="16dp"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:ems="10"
+                    android:id="@+id/create_contact_tags" android:hint="Tags" android:layout_margin="16dp"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/create_contact_time_zone" android:hint="Time Zone" android:layout_margin="16dp"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/create_contact_twitter_id" android:hint="Twitter ID" android:layout_margin="16dp"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/create_contact_unique_external_id" android:hint="Unique External ID"
+                    android:layout_margin="16dp"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/create_contact_other_companies" android:hint="Other Companies"
+                    android:layout_margin="16dp"/>
+
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/create_contact_company_id" android:hint="Company ID" android:layout_margin="16dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
